@@ -33,6 +33,9 @@
 
 - name: Copy the init script
   copy: src=jboss-as-standalone.sh dest=/etc/init.d/jboss mode=0755
+  
+- name: Pause for boot
+  pause: 5 seconds
 
 - name: Enable JBoss to be started at boot
   shell: sudo /etc/init.d/jboss start
