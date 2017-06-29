@@ -1,5 +1,5 @@
 ---
 - name: restart jboss
-  command: /etc/init.d/jboss restart
+  shell: /etc/init.d/jboss restart
 - name: restart iptables
   service: name=iptables state=restarted
