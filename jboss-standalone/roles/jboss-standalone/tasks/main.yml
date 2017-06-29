@@ -36,7 +36,6 @@
 
 - name: Enable JBoss to be started at boot
   shell: sudo /etc/init.d/jboss start
-  ignore_errors: yes
 
 - name: deploy iptables rules
   template: src=iptables-save dest=/etc/sysconfig/iptables
