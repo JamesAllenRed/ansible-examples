@@ -2,6 +2,8 @@
 # This playbook deploys two simple applications to JBoss server. 
 
 - hosts: all
+- user: ec2-user
+- become: true
 
   roles:
 # Optionally, (re)deploy JBoss here	  
